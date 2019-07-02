@@ -11,15 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+Route::view('/', 'auth.login')->middleware('guest');
 
 Auth::routes();
+Route::middleware('auth')->group(function () {
 
-Route::get('/home', 'HomeController@index')->name('home');
+    Route::get('/home', 'HomeController@index')->name('home');
 
-/*
- * Outlets Routes
- */
-Route::resource('outlets', 'OutletController');
+    /*
+     * Outlets Routes
+     */
+    Route::resource('outlets', 'OutletController');
+
+});
