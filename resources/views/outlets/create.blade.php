@@ -53,7 +53,7 @@
 @endsection
 
 @push('scripts')
-<!-- Make sure you put this AFTER Leaflet's CSS -->
+
 <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
    crossorigin=""></script>
@@ -65,10 +65,6 @@
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
         attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
     }).addTo(map);
-
-    // ===========================================================================
-
-
 
     var marker = L.marker(mapCenter).addTo(map);
     function updateMarker(lat, lng) {
