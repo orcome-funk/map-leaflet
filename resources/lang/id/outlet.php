@@ -28,8 +28,10 @@ return [
     'undeleteable'   => 'Data Toko tidak dapat dihapus.',
 
     // Attributes
-    'name'      => 'Nama Toko',
-    'address'   => 'Alamat',
-    'latitude'  => 'Latitude',
-    'longitude' => 'Longitude',
+    'name'       => 'Nama Toko',
+    'address'    => 'Alamat',
+    'latitude'   => 'Latitude',
+    'longitude'  => 'Longitude',
+    'location'   => 'Lokasi',
+    'coordinate' => 'Koordinate',
 ];
