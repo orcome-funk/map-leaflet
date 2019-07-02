@@ -24,6 +24,7 @@ Route::middleware('auth')->group(function () {
     /*
      * Outlets Routes
      */
+    Route::get('/our_outlets', 'OutletMapController@index')->name('outlet_map.index');
     Route::resource('outlets', 'OutletController');
 
 });

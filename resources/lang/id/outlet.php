@@ -13,6 +13,7 @@ return [
     'empty'         => 'Belum ada Toko',
     'back_to_show'  => 'Kembali ke detail Toko',
     'back_to_index' => 'Kembali ke daftar Toko',
+    'map_list'      => 'Lokasi Toko',
 
     // Actions
     'create'         => 'Input Toko Baru',
