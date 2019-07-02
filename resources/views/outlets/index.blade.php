@@ -9,7 +9,7 @@
             <a href="{{ route('outlets.create') }}" class="btn btn-success">{{ __('outlet.create') }}</a>
         @endcan
     </div>
-    <h1 class="page-title">{{ __('outlet.list') }} <small>{{ __('app.total') }} : {{ $outlets->total() }} {{ __('outlet.outlet') }}</small></h1>
+    <h2 class="page-title">{{ __('outlet.list') }} | <small>{{ __('app.total') }} : {{ $outlets->total() }} {{ __('outlet.outlet') }}</small></h2>
 </div>
 
 <div class="row">

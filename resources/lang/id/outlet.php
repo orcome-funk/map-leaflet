@@ -2,18 +2,21 @@
 
 return [
     // Labels
-    'outlet'        => 'Toko',
-    'list'          => 'Daftar Toko',
-    'search'        => 'Cari Toko',
-    'search_text'   => 'Nama ...',
-    'all'           => 'Semua Toko',
-    'select'        => 'Pilih Toko',
-    'detail'        => 'Detail Toko',
-    'not_found'     => 'Toko tidak ditemukan',
-    'empty'         => 'Belum ada Toko',
-    'back_to_show'  => 'Kembali ke detail Toko',
-    'back_to_index' => 'Kembali ke daftar Toko',
-    'map_list'      => 'Lokasi Toko',
+    'outlet'         => 'Toko',
+    'list'           => 'Daftar Toko',
+    'search'         => 'Cari Toko',
+    'search_text'    => 'Nama ...',
+    'all'            => 'Semua Toko',
+    'select'         => 'Pilih Toko',
+    'detail'         => 'Detail Toko',
+    'not_found'      => 'Toko tidak ditemukan',
+    'empty'          => 'Belum ada Toko',
+    'back_to_show'   => 'Kembali ke detail Toko',
+    'back_to_index'  => 'Kembali ke daftar Toko',
+    'map_list'       => 'Lokasi Toko',
+    'location'       => 'Lokasi',
+    'location_click' => 'Lokasi (Klik peta untuk menentukan lokasi)',
+    'coordinate'     => 'Koordinate',
 
     // Actions
     'create'         => 'Input Toko Baru',
@@ -29,10 +32,8 @@ return [
     'undeleteable'   => 'Data Toko tidak dapat dihapus.',
 
     // Attributes
-    'name'       => 'Nama Toko',
-    'address'    => 'Alamat',
-    'latitude'   => 'Latitude',
-    'longitude'  => 'Longitude',
-    'location'   => 'Lokasi',
-    'coordinate' => 'Koordinate',
+    'name'      => 'Nama Toko',
+    'address'   => 'Alamat',
+    'latitude'  => 'Latitude',
+    'longitude' => 'Longitude',
 ];
