@@ -8,14 +8,6 @@
         <div class="card">
             <div class="card-header">{{ __('outlet.detail') }}</div>
             <div class="card-body">
-                {{-- <table class="table table-sm">
-                    <tbody>
-                        <tr><td>{{ __('outlet.name') }}</td><td>{{ $outlet->name }}</td></tr>
-                        <tr><td>{{ __('outlet.address') }}</td><td>{{ $outlet->address }}</td></tr>
-                        <tr><td>{{ __('outlet.latitude') }}</td><td>{{ $outlet->latitude }}</td></tr>
-                        <tr><td>{{ __('outlet.longitude') }}</td><td>{{ $outlet->longitude }}</td></tr>
-                    </tbody>
-                </table> --}}
                 <label class="form-label text-primary">{{ __('outlet.name') }}</label>
                 <p>{{ $outlet->name }}</p>
                 <label class="form-label text-primary">{{ __('outlet.address') }}</label>
@@ -47,9 +39,11 @@
 @endsection
 
 @section('styles')
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+{{-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin=""/>
+   crossorigin=""/> --}}
+
+<link rel="stylesheet" href="{{ asset('leaflet/leaflet.css') }}" />
 
 <style>
     #mapid { height: 450px; }
@@ -57,9 +51,11 @@
 @endsection
 
 @push('scripts')
-<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+{{-- <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script>
+   crossorigin=""></script> --}}
+
+<script src="{{ asset('leaflet/leaflet.js') }}"></script>
 
 <script>
     var map = L.map('mapid').setView([{{ $outlet->latitude }}, {{ $outlet->longitude }}], {{ config('leaflet.detail_zoom_level') }});

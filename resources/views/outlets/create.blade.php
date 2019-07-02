@@ -54,9 +54,11 @@
 @endsection
 
 @section('styles')
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+{{-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
-   crossorigin=""/>
+   crossorigin=""/> --}}
+
+<link rel="stylesheet" href="{{ asset('leaflet/leaflet.css') }}" />
 
 <style>
     #mapid { height: 422px; }
@@ -64,10 +66,11 @@
 @endsection
 
 @push('scripts')
-
-<script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+{{-- <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
    integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
-   crossorigin=""></script>
+   crossorigin=""></script> --}}
+
+<script src="{{ asset('leaflet/leaflet.js') }}"></script>
 
 <script>
     var mapCenter = [{{ config('leaflet.map_center_latitude') }}, {{ config('leaflet.map_center_longitude') }}];
